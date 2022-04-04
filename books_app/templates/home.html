@@ -2,8 +2,9 @@
 
 {% block content %}
 
-You are visiting the homepage.
-
+Welcome to the homepage! 
 <!-- TODO: Display a list of users here, with each linking to their profile -->
-
+{% for user in users %}
+  <h3>{{user.username}}</h3>
+{% endfor %}
 {% endblock %}
